@@ -24,6 +24,18 @@ class Teacher extends Person {
   }
 }
 
+const john = new Person("John", 35);
+console.log(john.name); // Output: John
+john.age = 36; // set age to 36
+
+const mary = new Student("Mary", 20);
+console.log(mary.name); // Output: Mary
+mary.study(); // Output: Mary is studying.
+
+const mrSmith = new Teacher("Mr. Smith", 50);
+console.log(mrSmith.name); // Output: Mr. Smith
+mrSmith.teach(); // Output: Mr. Smith is teaching.
+
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
