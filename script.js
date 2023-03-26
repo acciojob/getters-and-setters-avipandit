@@ -14,27 +14,31 @@ class Person {
 
 class Student extends Person {
 	study() {
-    console.log(`${this._name} is studying.`);
+    console.log(`${this._name} is studying`);
   }
 }
 
 class Teacher extends Person {
 	teach() {
-    console.log(`${this._name} is teaching.`);
+    console.log(`${this._name} is teaching`);
   }
 }
 
-const john = new Person("John", 35);
-console.log(john.name); // Output: John
-john.age = 36; // set age to 36
+const mary = new Person("mary", 35);
+console.log(mary.name); 
+mary.age = 36; 
 
-const mary = new Student("Mary", 20);
-console.log(mary.name); // Output: Mary
-mary.study(); // Output: Mary is studying.
+const John = new Student("John", 20);
+console.log(John.name); 
+John.study(); 
 
-const mrSmith = new Teacher("Mr. Smith", 50);
-console.log(mrSmith.name); // Output: Mr. Smith
-mrSmith.teach(); // Output: Mr. Smith is teaching.
+const Alice = new Student("Alice", 20);
+console.log(Alice.name); 
+Alice.study(); 
+
+const John = new Teacher("John", 50);
+console.log(John.name); // Output: Mr. Smith
+John.teach(); // Output: Mr. Smith is teaching.
 
 // Do not change the code below this line
 window.Person = Person;
